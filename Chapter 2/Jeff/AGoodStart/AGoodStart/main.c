@@ -11,8 +11,13 @@
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    // Print the beginning of a novel
+    printf("It was the best of times. \n");
+    printf("It was the worst of times. \n");
+    
+    /* Is that actually any good?
+     Maybe it needs a rewrite. */
+    
     return 0;
 }
 
