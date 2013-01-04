@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <objc/objc.h>
 
 int main(int argc, const char * argv[])
 {
@@ -45,7 +46,6 @@ int main(int argc, const char * argv[])
     
 //    // BOOL
 //    
-//    // I'm not able to get the BOOL type to compile
 //    BOOL isNotLegal = !((truckWeight > 0.0) && (truckWeight < 40000.0));
 //    if(isNotLegal){
 //        printf("The truck weight is NOT within the normal limit.\n");
