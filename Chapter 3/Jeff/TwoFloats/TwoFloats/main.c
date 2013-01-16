@@ -13,7 +13,7 @@ int main(int argc, const char * argv[])
 
     // Create a variable of type float, and assign it a value
     
-    float numberOne = 3.99;
+    float numberOne = 3.14;
     
     // Create another
     
