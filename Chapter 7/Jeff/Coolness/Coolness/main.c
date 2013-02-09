@@ -10,10 +10,8 @@
 
 int main(int argc, const char * argv[])
 {
-    int i = 0;
-    while (i < 12) {
+    for (int i = 0; i < 12; i++) {
         printf("%d. Aaron is Cool\n", i);
-        i++;
     }
     
     return 0;
