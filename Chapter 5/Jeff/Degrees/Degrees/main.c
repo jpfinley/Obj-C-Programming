@@ -9,8 +9,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Declare a global variable
-float lastTemperature;
+//Initialize lastTemperature to 50 degrees
+static float lastTemperature = 50.0;
 
 
 float fahrenheitFromCelcius(float cel)
