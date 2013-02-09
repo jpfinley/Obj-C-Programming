@@ -26,6 +26,7 @@ int main(int argc, const char * argv[])
     float freezeInF = fahrenheitFromCelcius(freezeInC);
     printf("Water freezes at %f degrees Fahrenheit\n",
            freezeInF);
-    return 0;
+    printf("The last temperature converted was %f\n", lastTemperature);
+    return EXIT_SUCCESS;
 }
 
