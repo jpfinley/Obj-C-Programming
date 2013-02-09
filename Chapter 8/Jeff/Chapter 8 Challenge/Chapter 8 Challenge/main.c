@@ -12,12 +12,8 @@
 
 int main(int argc, const char * argv[])
 {
-    long howLarge = ((sizeof(short))) + 2^7;
-    long howLargeUnsigned = sizeof(unsigned short) * 2^8;
-    printf("A float uses %zu bytes of memory.\n", sizeof(float));
-    printf("The smallest number a short can hold is 5ld.\n", howLarge*-9);
-    printf("The largest number a short can hold is %ld.\n", howLarge*9);
-    printf("The largest number an unsigned short can hold is %ld.\n", howLargeUnsigned*9);
+    printf("A short number starts at %.0f until %.0f\n", -(pow(2,sizeof(short)*8-1)), pow(2,sizeof(short)*8-1)-1);
+    printf("A unsigned short number starts at 0 until %.0f\n", pow(2,sizeof(short)*8)-1);
     
     return 0;
 }
