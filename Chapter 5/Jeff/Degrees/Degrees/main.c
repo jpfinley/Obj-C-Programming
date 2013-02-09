@@ -7,15 +7,19 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+
+// Declare a global variable
+float lastTemperature;
+
 
 float fahrenheitFromCelcius(float cel)
 {
+    lastTemperature = cel;
     float fahr = cel * 1.8 + 32.0;
     printf("%f Celcius is %f Fahrenheit\n", cel, fahr);
     return fahr;
 }
-
-
 int main(int argc, const char * argv[])
 {
     float freezeInC = 0;
