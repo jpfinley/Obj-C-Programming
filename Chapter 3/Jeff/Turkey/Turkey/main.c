@@ -11,6 +11,7 @@
 int main(int argc, const char * argv[])
 {
 
+
     // Declare the variable called 'weight' of type float
     float weight;
     
