@@ -10,9 +10,12 @@
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
+    int i = 0;
+    while (i < 12) {
+        printf("%d. Aaron is Cool\n", i);
+        i++;
+    }
+    
     return 0;
 }
 
