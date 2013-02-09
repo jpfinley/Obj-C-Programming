@@ -8,10 +8,10 @@
 
 #include <stdio.h>
 
-float remainingAngle(float angleA, float angleB)
+float remainingAngle(float firstAngle, float secondAngle)
 {
-    float angleC = 180 - angleA - angleB;
-    return angleC;
+    float thirdAngle = 180 - firstAngle - secondAngle;
+    return thirdAngle;
 }
 
 int main(int argc, const char * argv[])
