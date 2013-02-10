@@ -20,6 +20,12 @@ float bodyMassIndex(Person p)
     return p.weightInKilos / (p.heightInMeters * p.heightInMeters);
 }
 
+void bodyMassCalc (Person p)
+{
+    float bmi = bodyMassIndex(p);
+    printf("person has a BMI of %.2f\n", bmi);
+}
+
 int main(int argc, const char * argv[])
 {
 
@@ -28,10 +34,8 @@ int main(int argc, const char * argv[])
     personOne.heightInMeters = 1.8;
     personTwo.weightInKilos = 267;
     personTwo.heightInMeters = 1.34;
-    float bmiOne = bodyMassIndex(personOne);
-    float bmiTwo = bodyMassIndex(personTwo);
-    printf("person one has a BMI of %.2f\n", bmiOne);
-    printf("person two has a BMI of %.2f\n", bmiTwo);
+    bodyMassCalc(personOne);
+    bodyMassCalc(personTwo);
     return 0;
 }
 
