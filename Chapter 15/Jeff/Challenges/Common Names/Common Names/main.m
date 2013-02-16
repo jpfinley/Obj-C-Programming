@@ -34,8 +34,10 @@ int main(int argc, const char * argv[])
         for (NSString *p in properNames) {
             for (NSString *w in words) {
                 if (![p caseInsensitiveCompare:w]) {
-                    count++;
-                    NSLog(@"%@ matches to %@.", p, w);
+                    if ([p compare:w]) {
+                        count++;
+                        NSLog(@"%@ matches to %@.", p, w);
+                    }
                 }
             }
         }
