@@ -14,10 +14,11 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
-        BOOL DST = [timeZone isDaylightSavingTime];
-        if (DST) {
+        
+        // ask timeZone if it is in DST
+        if ([timeZone isDaylightSavingTime]) {
             NSLog(@"It is currently DST in %@.", timeZone);
-        } else if (!DST) {
+        } else if (![timeZone isDaylightSavingTime]) {
             NSLog(@"It is not currently DST in %@.", timeZone);
         }
     }
