@@ -33,9 +33,7 @@ int main(int argc, const char * argv[])
         
         for (NSString *p in properNames) {
             for (NSString *w in words) {
-                NSRange r = [p rangeOfString:w
-                                     options:NSCaseInsensitiveSearch];
-                if (r.location != NSNotFound) {
+                if (![p caseInsensitiveCompare:w]) {
                     count++;
                     NSLog(@"%@ matches to %@.", p, w);
                 }
