@@ -33,10 +33,11 @@ int main(int argc, const char * argv[])
         
         for (NSString *p in properNames) {
             for (NSString *w in words) {
-                if ([p caseInsensitiveCompare:w]) {
+                if ([p caseInsensitiveCompare:w] == NSOrderedSame) {
+                    if ([p compare:w options:NSLiteralSearch] == NSOrderedAscending) {
                         count++;
                         NSLog(@"%@ matches to %@.", p, w);
-                   
+                    }
                 }
             }
         }
