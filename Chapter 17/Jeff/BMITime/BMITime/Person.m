@@ -10,9 +10,17 @@
 
 @implementation Person
 
+-(float)heightInMeters
+{
+    return heightInMeters;
+}
 -(void)setHeightInMeters:(float)h
 {
     heightInMeters = h;
+}
+-(int)weightInKilos
+{
+    return weightInKilos;
 }
 - (void)setWeightInKilos:(int)w
 {

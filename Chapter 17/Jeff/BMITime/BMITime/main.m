@@ -26,7 +26,7 @@ int main(int argc, const char * argv[])
         // Call the BMI method
         
         float bmi = [person bodyMassIndex];
-        NSLog(@"person has a BMI of %f", bmi);
+        NSLog(@"person (%d, %f) has a BMI of %f", [person weightInKilos], [person heightInMeters], bmi);
         
     }
     return 0;

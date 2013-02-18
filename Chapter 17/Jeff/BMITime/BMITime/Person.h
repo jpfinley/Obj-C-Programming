@@ -20,7 +20,9 @@
 }
 
 // You will be able to set those instance variables using these methods
+- (float)heightInMeters;
 - (void)setHeightInMeters:(float)h;
+- (int)weightInKilos;
 - (void)setWeightInKilos:(int)w;
 
 //This method calculates the Body Mass Index
