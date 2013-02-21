@@ -21,18 +21,21 @@ int main(int argc, const char * argv[])
                                                          encoding:NSUTF8StringEncoding
                                                             error:NULL];
 
-        // Break it into an array of strings
+        // Break them into an arrays of strings
         NSArray *names = [nameString componentsSeparatedByString:@"\n"];
+        NSArray *words = [wordString componentsSeparatedByString:@"\n"];
         
         // Go through the array one string at a time
-        for (NSString *n in names) {
+        for (NSString *w in words) {
+            for (NSString *n in names) {
             
-            // Look for the string "aa" in a case sensitive manner
-            NSRange r  = [n rangeOfString:@"aa" options:NSCaseInsensitiveSearch];
-            
-            // Was it found?
-            if (r.location != NSNotFound) {
-                NSLog(@"%@", n);
+                // Was it found?
+                if ([w caseInsensitiveCompare:n] == NSOrderedSame) {
+                    // Is it a common word?
+                    if ([w compare:n options:NSLiteralSearch]) {
+                        NSLog(@"%@ and %@ are ascending", n, w);
+                    }
+                }
             }
         }
     }
