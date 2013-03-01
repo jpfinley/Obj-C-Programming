@@ -29,11 +29,11 @@ int main(int argc, const char * argv[])
         for (NSString *w in words) {
             for (NSString *n in names) {
             
-                // Was it found?
+                // Was a match found found?
                 if ([w caseInsensitiveCompare:n] == NSOrderedSame) {
                     // Is it a common word?
                     if ([w compare:n options:NSLiteralSearch]) {
-                        NSLog(@"%@ and %@ are ascending", n, w);
+                        NSLog(@"%@ and %@ are the same", n, w);
                     }
                 }
             }
