@@ -14,7 +14,8 @@
 
 - (float)bodyMassIndex
 {
-    return weightInKilos / (heightInMeters * heightInMeters);
+    float h = [self heightInMeters];
+    return [self weightInKilos] / (h * h);
 }
 
 @end
