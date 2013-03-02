@@ -16,24 +16,24 @@ int main(int argc, const char * argv[])
         
         // Create Apple
         StockHolding *shareAPPL = [[StockHolding alloc] init];
-        [shareAPPL setPurchaseSharePrice: 45.678888888];
-        [shareAPPL setCurrentSharePrice: 500.4567];
+        [shareAPPL setPurchaseSharePrice: 548.32];
+        [shareAPPL setCurrentSharePrice: 430.47];
         [shareAPPL setNumberOfShares: 1 ];
-//        [shareAPPL setNameOfCompany:@"Apple"];
+        [shareAPPL setNameOfCompany:@"Apple"];
 
         // Create Google
         StockHolding *shareGOOG = [[StockHolding alloc] init];
-        [shareGOOG setPurchaseSharePrice: 45.678888888];
-        [shareGOOG setCurrentSharePrice: 500.4567];
+        [shareGOOG setPurchaseSharePrice: 635.67];
+        [shareGOOG setCurrentSharePrice: 806.19];
         [shareGOOG setNumberOfShares: 15 ];
-//        [shareGOOG setNameOfCompany:@"Google"];
+        [shareGOOG setNameOfCompany:@"Google"];
         
         // Create Microsoft
         StockHolding *shareMSFT = [[StockHolding alloc] init];
-        [shareMSFT setPurchaseSharePrice: 45.678888888];
-        [shareMSFT setCurrentSharePrice: 500.4567];
-        [shareMSFT setNumberOfShares: 1000 ];
-//        [shareMSFT setNameOfCompany:@"Microsoft"];
+        [shareMSFT setPurchaseSharePrice: 32.0];
+        [shareMSFT setCurrentSharePrice: 27.95];
+        [shareMSFT setNumberOfShares: 300 ];
+        [shareMSFT setNameOfCompany:@"Microsoft"];
 
         // create an array for the shares
         NSMutableArray *portfolio = [[NSMutableArray alloc] init];
@@ -46,8 +46,11 @@ int main(int argc, const char * argv[])
         // Then iterate through the array printing out the value of each.
         for (StockHolding *s in portfolio) {
             int shareNumber = [s numberOfShares];
-//            NSString *shareName = [s nameOfCompany];
-            NSLog(@"I own %d shares of this company", shareNumber);
+            float costDollars = [s costInDollars];
+            float valueDollars = [s valueInDollars];
+            NSString *shareName = [s nameOfCompany];
+            NSLog(@"One year ago, I bought %d shares of %@\n", shareNumber, shareName);
+            NSLog(@"Those shares cost me $%0.2f and are now worth $%0.2f\n\n", costDollars, valueDollars);
         }
     }
     return 0;

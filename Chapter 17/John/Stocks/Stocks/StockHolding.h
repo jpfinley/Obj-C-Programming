@@ -13,12 +13,12 @@
     float purchaseSharePrice;
     float currentSharePrice;
     int numberOfShares;
-    char nameOfCompany;
+    NSString *nameOfCompany;
 }
 
 @property float purchaseSharePrice, currentSharePrice;
 @property int numberOfShares;
-@property char nameOfCompany;
+@property NSString *nameOfCompany;
 
 - (float)costInDollars;
 - (float)valueInDollars;
