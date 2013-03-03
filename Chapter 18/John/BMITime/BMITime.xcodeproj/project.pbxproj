@@ -11,6 +11,7 @@
 		B14867AC16E1049B00B4C0E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B14867AB16E1049B00B4C0E6 /* main.m */; };
 		B14867B016E1049B00B4C0E6 /* BMITime.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B14867AF16E1049B00B4C0E6 /* BMITime.1 */; };
 		B14867B816E104D500B4C0E6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B14867B716E104D500B4C0E6 /* Person.m */; };
+		FF20ED9016E3BE97005B125C /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20ED8F16E3BE97005B125C /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		B14867AF16E1049B00B4C0E6 /* BMITime.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BMITime.1; sourceTree = "<group>"; };
 		B14867B616E104D500B4C0E6 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		B14867B716E104D500B4C0E6 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FF20ED8E16E3BE97005B125C /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		FF20ED8F16E3BE97005B125C /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				B14867B716E104D500B4C0E6 /* Person.m */,
 				B14867AF16E1049B00B4C0E6 /* BMITime.1 */,
 				B14867AD16E1049B00B4C0E6 /* Supporting Files */,
+				FF20ED8E16E3BE97005B125C /* Employee.h */,
+				FF20ED8F16E3BE97005B125C /* Employee.m */,
 			);
 			path = BMITime;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				B14867AC16E1049B00B4C0E6 /* main.m in Sources */,
 				B14867B816E104D500B4C0E6 /* Person.m in Sources */,
+				FF20ED9016E3BE97005B125C /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +254,7 @@
 				B14867B516E1049B00B4C0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
