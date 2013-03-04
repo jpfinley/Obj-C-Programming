@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StockHolding.h"
 
-@interface ForeignStockHolding : NSObject
+@interface ForeignStockHolding : StockHolding
+{
+    float conversionRate;
+}
+@property float conversionRate;
 
 @end

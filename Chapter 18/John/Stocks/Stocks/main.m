@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "StockHolding.h"
+#import "ForeignStockHolding.h"
 
 int main(int argc, const char * argv[])
 {
@@ -34,6 +35,14 @@ int main(int argc, const char * argv[])
         [shareMSFT setCurrentSharePrice: 27.95];
         [shareMSFT setNumberOfShares: 300 ];
         [shareMSFT setNameOfCompany:@"Microsoft"];
+        
+        // Create Foreign Stock Siemens
+        ForeignStockHolding *shareFSMS = [[ForeignStockHolding alloc] init];
+        [shareFSMS setPurchaseSharePrice: 55.5];
+        [shareFSMS setCurrentSharePrice: 103.55];
+        [shareFSMS setNumberOfShares: 67 ];
+        [shareFSMS setConversionRate: 2.3333333];
+        [shareFSMS setNameOfCompany:@"Siemens"];
 
         // create an array for the shares
         NSMutableArray *portfolio = [[NSMutableArray alloc] init];
@@ -42,6 +51,7 @@ int main(int argc, const char * argv[])
         [portfolio addObject:shareAPPL];
         [portfolio addObject:shareGOOG];
         [portfolio addObject:shareMSFT];
+        [portfolio addObject:shareFSMS];
 
         // Then iterate through the array printing out the value of each.
         for (StockHolding *s in portfolio) {
