@@ -12,6 +12,7 @@
 		FF20EDCC16E6308D005B125C /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDC916E6308D005B125C /* Employee.m */; };
 		FF20EDCD16E6308D005B125C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDCB16E6308D005B125C /* Person.m */; };
 		FF20EDCF16E630A4005B125C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDCE16E630A4005B125C /* main.m */; };
+		FF20EDD216E6337B005B125C /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDD116E6337B005B125C /* Asset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		FF20EDCA16E6308D005B125C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		FF20EDCB16E6308D005B125C /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		FF20EDCE16E630A4005B125C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../BMITime1/main.m; sourceTree = "<group>"; };
+		FF20EDD016E6337B005B125C /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		FF20EDD116E6337B005B125C /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 		FF20EDAE16E6304D005B125C = {
 			isa = PBXGroup;
 			children = (
+				FF20EDD016E6337B005B125C /* Asset.h */,
+				FF20EDD116E6337B005B125C /* Asset.m */,
 				FF20EDBC16E6304D005B125C /* BMITime */,
 				FF20EDB916E6304D005B125C /* Frameworks */,
 				FF20EDB816E6304D005B125C /* Products */,
@@ -152,6 +157,7 @@
 				FF20EDCC16E6308D005B125C /* Employee.m in Sources */,
 				FF20EDCD16E6308D005B125C /* Person.m in Sources */,
 				FF20EDCF16E630A4005B125C /* main.m in Sources */,
+				FF20EDD216E6337B005B125C /* Asset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

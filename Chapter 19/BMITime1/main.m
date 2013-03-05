@@ -7,13 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Person.h"
 #import "Employee.h"
+#import "Asset.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+
+        // Create an array of Employee objects
+        NSMutableArray *employees = [[NSMutableArray alloc] init];
+
+        for (int i = 0; i < 10; i++) {
+            // Create an instance of Employee
+            Employee *person = [[Employee alloc] init];
+
+            // Give the instance values interesting names
+            [person setWeightInKilos:90 + i];
+            [person setHeightInMeters:1.8 - i/10.0];
+            [person setEmployeeID:i];
+
+            // Put the employees into the array
+            [employees addObject:person];
+        }
 
         // Create an instance of Person
         Employee *john = [[Employee alloc] init];
