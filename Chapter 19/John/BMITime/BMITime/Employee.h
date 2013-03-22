@@ -17,7 +17,6 @@
 }
 
 @property int employeeID;
-
 - (void)addAssetsObject:(Asset *)a;
 - (unsigned int)valueofAssets;
 

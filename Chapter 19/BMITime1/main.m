@@ -31,6 +31,26 @@ int main(int argc, const char * argv[])
             [employees addObject:person];
         }
 
+        for (int i = 0; i < 10; i++) {
+            // Create an asset
+            Asset *asset = [[Asset alloc] init];
+
+            // Give it an interesting label
+            NSString *currentLabel = [NSString stringWithFormat:@"Laptop %d", i];
+            [asset setLabel:currentLabel];
+            [asset setResaleValue:i * 17];
+
+            // Get a random number between 0 and 9 inclusive
+            NSUInteger randomIndex = random() % [employees count];
+
+            // Find that employee
+            Employee *randomEmployee = [employees objectAtIndex:randomIndex];
+
+            // Assign that asset to the employee
+            [randomEmployee addAssetsObject:asset];
+        }
+
+
         // Create an instance of Person
         Employee *john = [[Employee alloc] init];
 
