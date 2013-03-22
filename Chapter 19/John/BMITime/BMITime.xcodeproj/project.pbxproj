@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FF20EDBB16E6304D005B125C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF20EDBA16E6304D005B125C /* Foundation.framework */; };
-		FF20EDC216E6304D005B125C /* BMITime.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF20EDC116E6304D005B125C /* BMITime.1 */; };
 		FF20EDCC16E6308D005B125C /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDC916E6308D005B125C /* Employee.m */; };
 		FF20EDCD16E6308D005B125C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDCB16E6308D005B125C /* Person.m */; };
-		FF20EDCF16E630A4005B125C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDCE16E630A4005B125C /* main.m */; };
 		FF20EDD216E6337B005B125C /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDD116E6337B005B125C /* Asset.m */; };
+		FF50DB5116FC028500B41AE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF50DB5016FC028500B41AE3 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +21,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				FF20EDC216E6304D005B125C /* BMITime.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -37,9 +35,9 @@
 		FF20EDC916E6308D005B125C /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		FF20EDCA16E6308D005B125C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		FF20EDCB16E6308D005B125C /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		FF20EDCE16E630A4005B125C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../BMITime1/main.m; sourceTree = "<group>"; };
 		FF20EDD016E6337B005B125C /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
 		FF20EDD116E6337B005B125C /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
+		FF50DB5016FC028500B41AE3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,7 @@
 		FF20EDBC16E6304D005B125C /* BMITime */ = {
 			isa = PBXGroup;
 			children = (
-				FF20EDCE16E630A4005B125C /* main.m */,
+				FF50DB5016FC028500B41AE3 /* main.m */,
 				FF20EDC816E6308D005B125C /* Employee.h */,
 				FF20EDC916E6308D005B125C /* Employee.m */,
 				FF20EDCA16E6308D005B125C /* Person.h */,
@@ -156,8 +154,8 @@
 			files = (
 				FF20EDCC16E6308D005B125C /* Employee.m in Sources */,
 				FF20EDCD16E6308D005B125C /* Person.m in Sources */,
-				FF20EDCF16E630A4005B125C /* main.m in Sources */,
 				FF20EDD216E6337B005B125C /* Asset.m in Sources */,
+				FF50DB5116FC028500B41AE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +258,7 @@
 				FF20EDC716E6304D005B125C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
