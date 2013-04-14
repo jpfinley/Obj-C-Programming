@@ -10,4 +10,14 @@
 
 @implementation StockHolding
 
+- (float)costInDollars
+{
+    return [self purchaseSharePrice] * [self numberOfShares];
+}
+
+- (float)valueInDollars
+{
+    return [self currentSharePrice] * [self numberOfShares];
+}
+
 @end
