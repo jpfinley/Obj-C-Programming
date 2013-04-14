@@ -10,7 +10,7 @@
 		FF20EDBB16E6304D005B125C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF20EDBA16E6304D005B125C /* Foundation.framework */; };
 		FF20EDCC16E6308D005B125C /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDC916E6308D005B125C /* Employee.m */; };
 		FF20EDCD16E6308D005B125C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDCB16E6308D005B125C /* Person.m */; };
-		FF20EDD216E6337B005B125C /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20EDD116E6337B005B125C /* Asset.m */; };
+		FF2C7640171B457B001239F3 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2C763F171B457B001239F3 /* Asset.m */; };
 		FF50DB5116FC028500B41AE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF50DB5016FC028500B41AE3 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +35,8 @@
 		FF20EDC916E6308D005B125C /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		FF20EDCA16E6308D005B125C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		FF20EDCB16E6308D005B125C /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		FF20EDD016E6337B005B125C /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
-		FF20EDD116E6337B005B125C /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
+		FF2C763E171B457B001239F3 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		FF2C763F171B457B001239F3 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
 		FF50DB5016FC028500B41AE3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,8 +55,6 @@
 		FF20EDAE16E6304D005B125C = {
 			isa = PBXGroup;
 			children = (
-				FF20EDD016E6337B005B125C /* Asset.h */,
-				FF20EDD116E6337B005B125C /* Asset.m */,
 				FF20EDBC16E6304D005B125C /* BMITime */,
 				FF20EDB916E6304D005B125C /* Frameworks */,
 				FF20EDB816E6304D005B125C /* Products */,
@@ -82,6 +80,8 @@
 		FF20EDBC16E6304D005B125C /* BMITime */ = {
 			isa = PBXGroup;
 			children = (
+				FF2C763E171B457B001239F3 /* Asset.h */,
+				FF2C763F171B457B001239F3 /* Asset.m */,
 				FF50DB5016FC028500B41AE3 /* main.m */,
 				FF20EDC816E6308D005B125C /* Employee.h */,
 				FF20EDC916E6308D005B125C /* Employee.m */,
@@ -154,8 +154,8 @@
 			files = (
 				FF20EDCC16E6308D005B125C /* Employee.m in Sources */,
 				FF20EDCD16E6308D005B125C /* Person.m in Sources */,
-				FF20EDD216E6337B005B125C /* Asset.m in Sources */,
 				FF50DB5116FC028500B41AE3 /* main.m in Sources */,
+				FF2C7640171B457B001239F3 /* Asset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
