@@ -45,12 +45,8 @@ int main(int argc, const char * argv[])
 
         // Then iterate through the array printing out the value of each.
         for (StockHolding *s in portfolio) {
-            int shareNumber = [s numberOfShares];
-            float costDollars = [s costInDollars];
-            float valueDollars = [s valueInDollars];
-            NSString *shareName = [s nameOfCompany];
-            NSLog(@"One year ago, I bought %d shares of %@\n", shareNumber, shareName);
-            NSLog(@"Those shares cost me $%0.2f and are now worth $%0.2f\n\n", costDollars, valueDollars);
+            NSLog(@"One year ago, I bought %d shares of %@\n", [s numberOfShares], [s nameOfCompany]);
+            NSLog(@"Those shares cost me $%0.2f and are now worth $%0.2f\n\n", [s costInDollars], [s valueInDollars]);
         }
     }
     return 0;
