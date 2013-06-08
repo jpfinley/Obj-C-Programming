@@ -17,8 +17,22 @@ int main(int argc, const char * argv[])
         for (int i = 0; i < 10; i++){
             [str appendString:@"John is cool.\n"];
         }
-        [str writeToFile:@"/tmp/cool.txt" atomically:YES encoding:NSUTF8StringEncoding error:NULL];
-        NSLog(@"done writing /tmp/cool.txt");
+
+        // Declare, but do not instantiate, an NSError object
+        NSError *error = nil;
+
+        // Pass the NSError pointer by reference to the NSString
+        BOOL success = [str writeToFile:@"/tmp/cool.txt"
+              atomically:YES
+                encoding:NSUTF8StringEncoding
+                   error:&error];
+
+        // Test the bool and query the error if the write failed
+        if (success){
+            NSLog(@"done writing /tmp/cool.txt");
+        } else {
+            NSLog(@"writing /tmp/cool.txt failed: %@", [error localizedDescription]);
+        }
 
     }
     return 0;
